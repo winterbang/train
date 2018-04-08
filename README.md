@@ -1,2 +1,2 @@
 # train
-rails template
+rails 项目生成模板
