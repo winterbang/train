@@ -14,11 +14,12 @@ rails 项目生成模板
   rails new myproject -d mysql -m https://raw.githubusercontent.com/winterbang/train/master/template.rb
 
 ## How It Works
-  就是使用ruby的```thor```库或rails为定制模板提供的方法将自己喜欢的配置参数或文件替换了rails项目默认生成的。
-  具体可以参考以下文档，然后你自己也可以定制一套自己的习惯的rails模板，再也不用苦恼于新建项目了。
+  使用ruby的```thor```库或rails为定制模板提供的方法将自己喜欢的配置参数或文件替换了rails项目默认生成的。
+  具体可以参考以下文档。
 
   - ```http://guides.rubyonrails.org/rails_application_templates.html```
 
   - ```https://github.com/erikhuda/thor```
 
 ## More
+  如果你想定制一套自己习惯的rails模板，摆脱繁琐的粘贴复制工作。可以fork本项目到自己的仓库，修改成你想要的rails项目配置
