@@ -1,0 +1,2 @@
+# mina staging deploy
+set :domain, '<%= staging_hostname -%>'

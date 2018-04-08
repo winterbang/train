@@ -1,0 +1,13 @@
+upstream <%= app_name -%> {
+  server unix:///mnt/www/<%= app_name -%>/shared/tmp/sockets/puma.sock;
+}
+server {
+  listen 80;
+  server_name <%= server_name -%>; # change to match your URL
+  root /mnt/www/<%= app_name -%>/shared/public; # I assume your app is located at that location
+  location / {
+    proxy_pass http://<%= app_name -%>; # match the name of upstream directive which is defined above
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+}
